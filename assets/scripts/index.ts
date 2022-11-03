@@ -1,5 +1,5 @@
 import "./main.ts";
-
+import "./auth.ts"
 
 
 
