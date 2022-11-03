@@ -6,6 +6,8 @@ const bodyEl = document.querySelector("body")
 
 const menuLinks = document.querySelectorAll(".menu a")
 
+
+
 openEl?.addEventListener("click", () => {
     bodyEl?.classList.add("open-menu")
 })
