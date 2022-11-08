@@ -26,7 +26,7 @@ const showAuthForm = (id: string) => {
 const render = () => {
     hideAllForms()
     const hash = window.location.hash
-    console.log("valor ", hash)
+    // console.log("valor ", hash)
 
 
 
@@ -75,7 +75,7 @@ window.addEventListener("hashchange", () => {
         
         form.addEventListener("submit", (e) => {
             e.preventDefault()
-            console.log(form)
+            // console.log(form)
 
             const target = e.target as HTMLElement
 
@@ -83,7 +83,7 @@ window.addEventListener("hashchange", () => {
 
             emailInput?.forEach(input => {
                 sessionStorage.setItem("email", input.value)
-                console.log(sessionStorage)
+                // console.log(sessionStorage)
             })
         
             const id = target.id

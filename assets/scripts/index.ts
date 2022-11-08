@@ -1,5 +1,6 @@
-import "./main.ts";
+import "./main.ts"
 import "./auth.ts"
+import "./calendar.ts"
 
 
 

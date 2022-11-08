@@ -724,6 +724,9 @@ header.page-title hr {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
+.calendar .days li.month-prev, .calendar .days li.month-next {
+  color: var(--gray-2);
+}
 .calendar .days li:hover {
   background-color: var(--gray-7);
 }
