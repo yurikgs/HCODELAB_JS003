@@ -20,23 +20,24 @@ let inicioMes = startOfMonth(hoje)
 
 const render = () => {
     titulo.innerText = format(inicioMes, 'MMMM yyyy', { locale })
-
+    
     calendario.innerHTML = ""
-
+    
     // Nas lis, colocar todos os dias do calenario em ordem crescente
     let primeiroDia = startOfWeek(inicioMes)
     console.log(format(primeiroDia, 'dd/MM/yy'))
-
+    
     const ultimoDia = endOfWeek(endOfMonth(inicioMes))
     console.log(format(ultimoDia, 'dd/MM/yy'))
-
-
+    
+    
+    
     while (differenceInMilliseconds(ultimoDia, primeiroDia) >= 0) {
-
-
+        
+        
         // "imprimindo" todos os dias na li
-
         const li = document.createElement("li")
+
         li.innerText = format(primeiroDia, "d")
         
 
@@ -58,12 +59,20 @@ const render = () => {
 
 
 
+        // criando evento de click - selected , no li
+        li.addEventListener("click", () => {
+
+            page.querySelectorAll("li")?.forEach(el => el.classList.remove("selected"))
+
+            li.classList.add("selected")
+        })
 
         // anexando a li ao calendário (ul)
         calendario.appendChild(li)
-
-
         primeiroDia = addDays(primeiroDia, 1)
+
+
+ 
     }
 
 
