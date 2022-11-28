@@ -1,7 +1,7 @@
 
 
 const authPage = document.querySelector("main#auth")
-
+if(authPage) {
 // Esonder todos os formulários
 
 const hideAllForms = () => {
@@ -67,9 +67,9 @@ window.addEventListener("hashchange", () => {
 
 
 
-    const forms = document.querySelectorAll("form")
+    const forms = authPage?.querySelectorAll("form")
   
-    forms.forEach(form => {
+    forms?.forEach(form => {
         
         
         
@@ -104,3 +104,5 @@ window.addEventListener("hashchange", () => {
         
 
     })
+
+}
