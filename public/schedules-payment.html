@@ -89,20 +89,22 @@
                     <div class="form-fields">
 
                         <div class="field">
-                            <input type="number" name="number" id="number" required />
+                            <input type="text" name="number" id="number" required />
                             <label for="number">Número do Cartão</label>
                         </div>
+
+                        
 
                         <div class="fields">
 
                             <div class="field">
-                                <input type="number" name="expiry" id="expiry"
+                                <input type="text" name="expiry" id="expiry"
                                 required />
                                 <label for="expiry">Validade</label>
                             </div>
 
                             <div class="field">
-                                <input type="number" name="cvv" id="cvv" required />
+                                <input type="text" name="cvv" id="cvv" required />
                                 <label for="cvv">CVV</label>
                             </div>
 
@@ -130,12 +132,12 @@
                         </div>
 
                         <div class="field">
-                            <input type="number" name="document" id="document" required />
+                            <input type="text" name="document" id="document" required />
                             <label for="document">CPF</label>
                         </div>
 
                         <footer class="fixed">
-                            <a href="schedules-services.html">Voltar</a>
+                            <a>Voltar</a>
                             <button type="submit">Continuar</button>
                         </footer>
 
@@ -168,65 +170,10 @@
 
                     <tbody>
 
-                        <tr>
+                        <!-- <tr>
                             <td>Alinhamento</td>
                             <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
-
-                        <tr>
-                            <td>Alinhamento</td>
-                            <td class="price">R$ 0,00</td>
-                        </tr>
+                        </tr> -->
 
                     </tbody>
 
@@ -249,17 +196,6 @@
 
     </section>
 
-    <script>
-
-        const card = document.querySelector('#credit-card')
-
-        card.addEventListener('click', e => {
-
-            card.classList.toggle('flipped')
-
-        })
-
-    </script>
     <script src="./bundle.js"></script>
 </body>
 </html>
